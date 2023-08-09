@@ -1,0 +1,174 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              }
+            }
+          }
+        }
+    </script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+          .content-auto {
+            content-visibility: auto;
+          }
+        }
+    </style>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.0/flowbite.min.css"  rel="stylesheet" />
+</head>
+<body>
+    
+    <nav class="bg-white dark:bg-gray-900 fixed w-full z-20 top-0 left-0 border-b border-gray-200 dark:border-gray-600">
+    <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+    <a href="#" class="flex items-center">
+        <img src="assets/images/icons8-logo-150.png" class="h-11 mr-3" alt="AirBook Logo">
+        <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">AirBook</span>
+    </a>
+    <div class="flex md:order-2">
+        <button type="button" class="text-white bg-indigo-500 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center mr-3 md:mr-0 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Get started</button>
+        <button data-collapse-toggle="navbar-sticky" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-sticky" aria-expanded="false">
+          <span class="sr-only">Open main menu</span>
+          <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+          </svg>
+      </button>
+    </div>
+    <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
+      <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+        <li>
+          <a href="#" class="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500" aria-current="page">Home</a>
+        </li>
+        <li>
+          <a href="#" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">About</a>
+        </li>
+        <li>
+          <a href="#" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Services</a>
+        </li>
+        <li>
+          <a href="#" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Contact</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+    </nav>
+  
+    <section class="text-gray-600 body-font mt-7">
+        <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+          <div class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+            <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">Before they sold out
+              <br class="hidden lg:inline-block">Checkout our services
+            </h1>
+            <p class="mb-8 leading-relaxed">Here at AirBook company we have a lot of features and services that make you confident you can find all what you nedd in one place.</p>
+            <div class="flex justify-center">
+              <button class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">Features</button>
+              <button class="ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg">Services</button>
+            </div>
+          </div>
+          <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+            <img class="object-cover object-center rounded" alt="hero" src="assets/images/undraw_Aircraft_re_m05i.png">
+          </div>
+        </div>
+    </section>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 lg:grid-cols-3 lg:gap-8 p-20">
+        <div class="h-30 rounded-lg bg-gray-100 mb-5">
+            <a href="#" class="group relative block bg-black">
+                <img
+                  alt="feature"
+                  src="assets/images/1.jpg"
+                  class="absolute inset-0 h-full w-full object-cover opacity-75 transition-opacity group-hover:opacity-50"
+                />
+              
+                <div class="relative p-4 sm:p-6 lg:p-8">
+                  <p class="text-sm font-medium uppercase tracking-widest text-pink-500">
+                    Comfort
+                  </p>
+              
+                  <p class="text-xl font-bold text-white sm:text-2xl">England</p>
+              
+                  <div class="mt-32 sm:mt-48 lg:mt-64">
+                    <div
+                      class="translate-y-8 transform opacity-0 transition-all group-hover:translate-y-0 group-hover:opacity-100"
+                    >
+                      <p class="text-sm text-white">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis
+                        perferendis hic asperiores quibusdam quidem voluptates doloremque
+                        reiciendis nostrum harum. Repudiandae?
+                      </p>
+                    </div>
+                  </div>
+                </div>
+            </a>
+        </div>
+        <div class="h-30 rounded-lg bg-gray-100 mb-5">
+            <a href="#" class="group relative block bg-black">
+                <img
+                  alt="feature"
+                  src="assets/images/2.jpg"
+                  class="absolute inset-0 h-full w-full object-cover opacity-75 transition-opacity group-hover:opacity-50"
+                />
+              
+                <div class="relative p-4 sm:p-6 lg:p-8">
+                  <p class="text-sm font-medium uppercase tracking-widest text-pink-500">
+                    Secured
+                  </p>
+              
+                  <p class="text-xl font-bold text-white sm:text-2xl">Spain</p>
+              
+                  <div class="mt-32 sm:mt-48 lg:mt-64">
+                    <div
+                      class="translate-y-8 transform opacity-0 transition-all group-hover:translate-y-0 group-hover:opacity-100"
+                    >
+                      <p class="text-sm text-white">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis
+                        perferendis hic asperiores quibusdam quidem voluptates doloremque
+                        reiciendis nostrum harum. Repudiandae?
+                      </p>
+                    </div>
+                  </div>
+                </div>
+            </a>
+        </div>
+        <div class="h-30 rounded-lg bg-gray-100 mb-5">
+            <a href="#" class="group relative block bg-black">
+                <img
+                  alt="feature"
+                  src="assets/images/3.jpg"
+                  class="absolute inset-0 h-full w-full object-cover opacity-75 transition-opacity group-hover:opacity-50"
+                />
+              
+                <div class="relative p-4 sm:p-6 lg:p-8">
+                  <p class="text-sm font-medium uppercase tracking-widest text-pink-500">
+                    Relaxing
+                  </p>
+              
+                  <p class="text-xl font-bold text-white sm:text-2xl">Brazil</p>
+              
+                  <div class="mt-32 sm:mt-48 lg:mt-64">
+                    <div
+                      class="translate-y-8 transform opacity-0 transition-all group-hover:translate-y-0 group-hover:opacity-100"
+                    >
+                      <p class="text-sm text-white">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis
+                        perferendis hic asperiores quibusdam quidem voluptates doloremque
+                        reiciendis nostrum harum. Repudiandae?
+                      </p>
+                    </div>
+                  </div>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.0/flowbite.min.js"></script>
+</body>
+</html>
