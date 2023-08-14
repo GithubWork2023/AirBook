@@ -22,20 +22,44 @@
           }
         }
     </style>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css" integrity="sha384-b6lVK+yci+bfDmaY1u0zE8YYJt0TZxLEAFyYSLHId4xoVvsrQu3INevFKo+Xir8e" crossorigin="anonymous">
     <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.0/flowbite.min.css"  rel="stylesheet" />
+    <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
-    
-    <nav class="bg-white dark:bg-gray-900 fixed w-full z-20 top-0 left-0 border-b border-gray-200 dark:border-gray-600">
+
+    <!--navbar start-->
+    <nav class="shadow bg-gray-50 dark:bg-gray-900 fixed w-full z-20 top-0 left-0 border-gray-200 dark:border-gray-600">
     <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
     <a href="#" class="flex items-center">
-        <img src="assets/images/icons8-logo-150.png" class="h-11 mr-3" alt="AirBook Logo">
+        <img src="assets/images/logo.png" class="h-11 mr-3" alt="AirBook Logo">
         <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">AirBook</span>
     </a>
     <div class="flex md:order-2">
-        <button type="button" class="text-white bg-indigo-500 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center mr-3 md:mr-0 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Get started</button>
-        <button data-collapse-toggle="navbar-sticky" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-sticky" aria-expanded="false">
+        <!--start btn-->
+        <button class="btn-cssbuttons me-4">
+          <span>Join</span>
+          <span>
+            <svg height="18" width="18" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 1024 1024" class="icon">
+              <path fill="#ffffff" d="M767.99994 585.142857q75.995429 0 129.462857 53.394286t53.394286 129.462857-53.394286 129.462857-129.462857 53.394286-129.462857-53.394286-53.394286-129.462857q0-6.875429 1.170286-19.456l-205.677714-102.838857q-52.589714 49.152-124.562286 49.152-75.995429 0-129.462857-53.394286t-53.394286-129.462857 53.394286-129.462857 129.462857-53.394286q71.972571 0 124.562286 49.152l205.677714-102.838857q-1.170286-12.580571-1.170286-19.456 0-75.995429 53.394286-129.462857t129.462857-53.394286 129.462857 53.394286 53.394286 129.462857-53.394286 129.462857-129.462857 53.394286q-71.972571 0-124.562286-49.152l-205.677714 102.838857q1.170286 12.580571 1.170286 19.456t-1.170286 19.456l205.677714 102.838857q52.589714-49.152 124.562286-49.152z"></path>
+            </svg>
+          </span>
+          <ul>
+          <li>
+            <a href="https://twitter.com/SumethWrrn"><svg height="18" width="18" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 1024 1024" class="icon">
+            <path fill="white" d="M962.267429 233.179429q-38.253714 56.027429-92.598857 95.451429 0.585143 7.972571 0.585143 23.990857 0 74.313143-21.723429 148.260571t-65.974857 141.970286-105.398857 120.32-147.456 83.456-184.539429 31.158857q-154.843429 0-283.428571-82.870857 19.968 2.267429 44.544 2.267429 128.585143 0 229.156571-78.848-59.977143-1.170286-107.446857-36.864t-65.170286-91.136q18.870857 2.852571 34.889143 2.852571 24.576 0 48.566857-6.290286-64-13.165714-105.984-63.707429t-41.984-117.394286l0-2.267429q38.838857 21.723429 83.456 23.405714-37.741714-25.161143-59.977143-65.682286t-22.308571-87.990857q0-50.322286 25.161143-93.110857 69.12 85.138286 168.301714 136.265143t212.260571 56.832q-4.534857-21.723429-4.534857-42.276571 0-76.580571 53.979429-130.56t130.56-53.979429q80.018286 0 134.875429 58.294857 62.317714-11.995429 117.174857-44.544-21.138286 65.682286-81.115429 101.741714 53.174857-5.705143 106.276571-28.598857z"></path></svg></a>
+          </li>
+          <li>
+            <a href="https://codepen.io/sharpth"><svg height="18" width="18" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 1024 1024" class="icon">
+            <path fill="white" d="M123.52064 667.99143l344.526782 229.708899 0-205.136409-190.802457-127.396658zM88.051421 585.717469l110.283674-73.717469-110.283674-73.717469 0 147.434938zM556.025711 897.627196l344.526782-229.708899-153.724325-102.824168-190.802457 127.396658 0 205.136409zM512 615.994287l155.406371-103.994287-155.406371-103.994287-155.406371 103.994287zM277.171833 458.832738l190.802457-127.396658 0-205.136409-344.526782 229.708899zM825.664905 512l110.283674 73.717469 0-147.434938zM746.828167 458.832738l153.724325-102.824168-344.526782-229.708899 0 205.136409zM1023.926868 356.00857l0 311.98286q0 23.402371-19.453221 36.566205l-467.901157 311.98286q-11.993715 7.459506-24.57249 7.459506t-24.57249-7.459506l-467.901157-311.98286q-19.453221-13.163834-19.453221-36.566205l0-311.98286q0-23.402371 19.453221-36.566205l467.901157-311.98286q11.993715-7.459506 24.57249-7.459506t24.57249 7.459506l467.901157 311.98286q19.453221 13.163834 19.453221 36.566205z"></path></svg></a>
+          </li>
+          <li>
+          <a href="https://github.com/SharpTH"><svg height="18" width="18" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 1024 1024" class="icon">
+          <path fill="white" d="M950.930286 512q0 143.433143-83.748571 257.974857t-216.283429 158.573714q-15.433143 2.852571-22.601143-4.022857t-7.168-17.115429l0-120.539429q0-55.442286-29.696-81.115429 32.548571-3.437714 58.587429-10.313143t53.686857-22.308571 46.299429-38.034286 30.281143-59.977143 11.702857-86.016q0-69.12-45.129143-117.686857 21.138286-52.004571-4.534857-116.589714-16.018286-5.12-46.299429 6.290286t-52.589714 25.161143l-21.723429 13.677714q-53.174857-14.848-109.714286-14.848t-109.714286 14.848q-9.142857-6.290286-24.283429-15.433143t-47.689143-22.016-49.152-7.68q-25.161143 64.585143-4.022857 116.589714-45.129143 48.566857-45.129143 117.686857 0 48.566857 11.702857 85.723429t29.988571 59.977143 46.006857 38.253714 53.686857 22.308571 58.587429 10.313143q-22.820571 20.553143-28.013714 58.88-11.995429 5.705143-25.746286 8.557714t-32.548571 2.852571-37.449143-12.288-31.744-35.693714q-10.825143-18.285714-27.721143-29.696t-28.306286-13.677714l-11.410286-1.682286q-11.995429 0-16.603429 2.56t-2.852571 6.582857 5.12 7.972571 7.460571 6.875429l4.022857 2.852571q12.580571 5.705143 24.868571 21.723429t17.993143 29.110857l5.705143 13.165714q7.460571 21.723429 25.161143 35.108571t38.253714 17.115429 39.716571 4.022857 31.744-1.974857l13.165714-2.267429q0 21.723429 0.292571 50.834286t0.292571 30.866286q0 10.313143-7.460571 17.115429t-22.820571 4.022857q-132.534857-44.032-216.283429-158.573714t-83.748571-257.974857q0-119.442286 58.88-220.306286t159.744-159.744 220.306286-58.88 220.306286 58.88 159.744 159.744 58.88 220.306286z"></path></svg></a></li></ul>
+        </button>
+        <!--end btn-->
+        <button data-collapse-toggle="navbar-sticky" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600 mt-2" aria-controls="navbar-sticky" aria-expanded="false">
           <span class="sr-only">Open main menu</span>
           <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
               <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
@@ -43,28 +67,31 @@
       </button>
     </div>
     <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
-      <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+      <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg md:flex-row md:space-x-8 md:mt-0 md:border-0 bg-gray-50 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
         <li>
-          <a href="#" class="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500" aria-current="page">Home</a>
+          <a href="#" class="block py-2 pl-3 pr-4 text-white bg-indigo-500 rounded md:bg-transparent md:text-indigo-500 md:p-0 md:dark:text-indigo-500" aria-current="page">Home</a>
         </li>
         <li>
-          <a href="#" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">About</a>
+          <a href="#" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-indigo-500 md:p-0 md:dark:hover:text-indigo-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">About</a>
         </li>
         <li>
-          <a href="#" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Services</a>
+          <a href="#" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-indigo-500 md:p-0 md:dark:hover:text-indigo-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Services</a>
         </li>
         <li>
-          <a href="#" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Contact</a>
+          <a href="#" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-indigo-500 md:p-0 md:dark:hover:text-indigo-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Contact</a>
         </li>
       </ul>
     </div>
     </div>
     </nav>
-  
-    <section class="text-gray-600 bg-gray-50 body-font mt-7">
+    <!--navbar end---------------------------------------->
+
+
+    <!--top section start-->
+    <section class="text-gray-600 bg-white body-font mt-7 dark:bg-gray-900">
         <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
           <div class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
-            <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">Before they sold out
+            <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900 dark:text-indigo-500">Before they sold out
               <br class="hidden lg:inline-block">Checkout our services
             </h1>
             <p class="mb-8 leading-relaxed">Here at AirBook company we have a lot of features and services that make you confident you can find all what you nedd in one place.</p>
@@ -74,12 +101,22 @@
             </div>
           </div>
           <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
-            <img class="object-cover object-center rounded" alt="hero" src="assets/images/undraw_Aircraft_re_m05i.png">
+            <img class="object-cover object-center rounded" alt="hero" src="assets/images/undraw_adventure_re_ncqp.svg">
           </div>
         </div>
     </section>
+    <!--top section end-------------------------------->
 
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 lg:grid-cols-3 lg:gap-8 p-20">
+
+    <!--scroll to top button start-->
+      <span class="scrollTop">
+        UP   
+      </span>
+    <!--scroll to top button end-------------------------------->
+
+
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 lg:grid-cols-3 lg:gap-8 p-20 dark:bg-gray-900">
         <div class="h-30 rounded-lg bg-gray-50 mb-5">
             <a href="#" class="group relative block bg-black">
                 <img
@@ -170,42 +207,262 @@
     </div>
     
 
-    <section class="overflow-hidden bg-gray-50 sm:grid sm:grid-cols-2 sm:items-center mb-20" >
-      <div class="p-8 md:p-12 lg:px-16 lg:py-24">
+    <!--pilots section start-->
+    <section class="bg-white dark:bg-gray-900">
+      <div class="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6">
+          <div class="font-light text-gray-500 sm:text-lg dark:text-gray-400">
+            <div class="p-8 md:p-12 mb-8">
+              <a href="#" class="bg-blue-100 text-blue-800 text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded-md dark:bg-gray-700 dark:text-blue-400 mb-2">
+                  <svg class="w-2.5 h-2.5 mr-1.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 14">
+                      <path d="M11 0H2a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h9a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2Zm8.585 1.189a.994.994 0 0 0-.9-.138l-2.965.983a1 1 0 0 0-.685.949v8a1 1 0 0 0 .675.946l2.965 1.02a1.013 1.013 0 0 0 1.032-.242A1 1 0 0 0 20 12V2a1 1 0 0 0-.415-.811Z"/>
+                  </svg>
+                  Tutorial
+              </a>
+              <h1 class="text-gray-900 dark:text-white text-3xl md:text-5xl font-extrabold mb-2">How to join us now as a pilot ?</h1>
+              <p class="text-lg font-normal text-gray-500 dark:text-gray-400 mb-6">Now you can join airbook company as a pilot you just need to send us your cv.</p>
+              <button class="btn-send bg-indigo-500">
+                <div class="svg-wrapper-1">
+                  <div class="svg-wrapper">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                      <path fill="none" d="M0 0h24v24H0z"></path>
+                      <path fill="currentColor" d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z"></path>
+                    </svg>
+                  </div>
+                </div>
+                <span>Send</span>
+              </button>
+            </div>
+          </div>
+          <div class="grid grid-cols-2 gap-4 mt-8">
+              <img class="w-full rounded-lg" src="assets/images/pilot.jpg">
+              <img class="mt-4 w-full lg:mt-10 rounded-lg" src="assets/images/7.jpg">
+          </div>
+      </div>
+    </section>
+    <!--pilots section end------------------------->
+
+
+    <!--reviews section start-->
+    <section class="dark:bg-gray-900">
+      <div class="text-4xl font-bold text-gray-400 dark:text-white text-center">Our Reveiws</div>
+      <div class="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">
         <div
-          class="mx-auto max-w-xl text-center ltr:sm:text-left rtl:sm:text-right"
+          class="[column-fill:_balance] sm:columns-2 sm:gap-6 lg:columns-3 lg:gap-8"
         >
-          <h2 class="text-2xl font-bold text-gray-900 md:text-3xl">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit
-          </h2>
-
-          <p class="hidden text-gray-500 md:mt-4 md:block">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et, egestas
-            tempus tellus etiam sed. Quam a scelerisque amet ullamcorper eu enim et
-            fermentum, augue. Aliquet amet volutpat quisque ut interdum tincidunt
-            duis.
-          </p>
-
-          <div class="mt-4 md:mt-8">
-            <a
-              href="#"
-              class="inline-block rounded bg-indigo-500 px-12 py-3 text-sm font-medium text-white transition hover:bg-emerald-700 focus:outline-none focus:ring focus:ring-yellow-400"
-            >
-              Get Started Today
-            </a>
+          <div class="mb-8 sm:break-inside-avoid">
+            <blockquote class="rounded-xl bg-gray-50 dark:bg-gray-300 p-6 shadow">
+              <p class="leading-relaxed text-gray-700">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
+                minima dicta amet, molestiae aliquam incidunt suscipit recusandae
+                labore ratione doloremque, architecto et illo minus quo tenetur
+                ducimus, voluptatibus repellendus fuga aperiam vel ab! Ipsam
+                corrupti blanditiis dolorum! Officia assumenda rem nam, eveniet enim
+                ad inventore laudantium est illum voluptatem quis.
+              </p>
+            </blockquote>
+    
+            <div class="mt-4 flex items-center gap-4">
+              <img
+                alt="avatar"
+                src="assets/images/avatar.jpg"
+                class="h-12 w-12 rounded-full object-cover"
+              />
+    
+              <div class="text-sm dark:text-white">
+                <p class="font-medium">Gladis Lennon</p>
+                <p class="mt-1">Head of SEO</p>
+              </div>
+            </div>
+          </div>
+    
+          <div class="mb-8 sm:break-inside-avoid">
+            <blockquote class="rounded-xl bg-gray-50 dark:bg-gray-300 p-6 shadow">
+              <p class="leading-relaxed text-gray-700">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore vel
+                quo deserunt quos expedita minima incidunt sed tempora, a architecto
+                consectetur reprehenderit, in repellat voluptatum.
+              </p>
+            </blockquote>
+    
+            <div class="mt-4 flex items-center gap-4">
+              <img
+                alt="avatar"
+                src="assets/images/avatar.jpg"
+                class="h-12 w-12 rounded-full object-cover"
+              />
+    
+              <div class="text-sm dark:text-white">
+                <p class="font-medium">Gladis Lennon</p>
+                <p class="mt-1">Head of SEO</p>
+              </div>
+            </div>
+          </div>
+    
+          <div class="mb-8 sm:break-inside-avoid">
+            <blockquote class="rounded-xl bg-gray-50 dark:bg-gray-300 p-6 shadow">
+              <p class="leading-relaxed text-gray-700">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
+                beatae incidunt perferendis soluta facilis voluptas dicta
+                repudiandae quasi asperiores libero, exercitationem molestiae autem
+                sapiente dolore nulla non consequatur. Eaque, dolores.
+              </p>
+            </blockquote>
+    
+            <div class="mt-4 flex items-center gap-4">
+              <img
+                alt="avatar"
+                src="assets/images/avatar.jpg"
+                class="h-12 w-12 rounded-full object-cover"
+              />
+    
+              <div class="text-sm dark:text-white">
+                <p class="font-medium">Gladis Lennon</p>
+                <p class="mt-1">Head of SEO</p>
+              </div>
+            </div>
+          </div>
+    
+          <div class="mb-8 sm:break-inside-avoid">
+            <blockquote class="rounded-xl bg-gray-50 dark:bg-gray-300 p-6 shadow">
+              <p class="leading-relaxed text-gray-700">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus
+                doloribus eius aut unde, dolores accusantium!
+              </p>
+            </blockquote>
+    
+            <div class="mt-4 flex items-center gap-4">
+              <img
+                alt="avatar"
+                src="assets/images/avatar.jpg"
+                class="h-12 w-12 rounded-full object-cover"
+              />
+    
+              <div class="text-sm dark:text-white">
+                <p class="font-medium">Gladis Lennon</p>
+                <p class="mt-1">Head of SEO</p>
+              </div>
+            </div>
+          </div>
+    
+          <div class="mb-8 sm:break-inside-avoid">
+            <blockquote class="rounded-xl bg-gray-50 dark:bg-gray-300 p-6 shadow">
+              <p class="leading-relaxed text-gray-700">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi a
+                voluptatum quidem nulla quisquam natus velit provident earum esse,
+                odio numquam labore recusandae similique sunt.
+              </p>
+            </blockquote>
+    
+            <div class="mt-4 flex items-center gap-4">
+              <img
+                alt="avatar"
+                src="assets/images/avatar.jpg"
+                class="h-12 w-12 rounded-full object-cover"
+              />
+    
+              <div class="text-sm dark:text-white">
+                <p class="font-medium">Gladis Lennon</p>
+                <p class="mt-1">Head of SEO</p>
+              </div>
+            </div>
+          </div>
+    
+          <div class="mb-8 sm:break-inside-avoid">
+            <blockquote class="rounded-xl bg-gray-50 dark:bg-gray-300 p-6 shadow">
+              <p class="leading-relaxed text-gray-700">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius ut
+                necessitatibus, repudiandae qui dolor minima.
+              </p>
+            </blockquote>
+    
+            <div class="mt-4 flex items-center gap-4">
+              <img
+                alt="avatar"
+                src="assets/images/avatar.jpg"
+                class="h-12 w-12 rounded-full object-cover"
+              />
+    
+              <div class="text-sm dark:text-white">
+                <p class="font-medium">Gladis Lennon</p>
+                <p class="mt-1">Head of SEO</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-
-      <img
-        alt="Violin"
-        src="assets/images/5.jpg"
-        class="h-full w-full object-cover sm:h-[calc(100%_-_2rem)] sm:self-end sm:rounded-ss-[30px] md:h-[calc(100%_-_4rem)] md:rounded-ss-[60px]"
-      />
-
     </section>
+    <!--reviews section end----------------------->
 
+
+    <!--features section start-->
+    <section class="text-gray-600 body-font dark:bg-gray-900">
+      <div class="container px-5 py-24 mx-auto">
+        <div class="text-center mb-20 dark:text-white">
+          <h1 class="sm:text-3xl text-2xl font-medium text-center title-font text-gray-900 mb-4 dark:text-indigo-500">Portion of AirBook Features</h1>
+          <p class="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto">Lorem ipsum dolor sit amet Aspernatur voluptatibus itaque suscipit dicta doloribus ducimus recusandae autem, culpa qui quasi</p>
+        </div>
+        <div class="flex flex-wrap lg:w-4/5 sm:mx-auto sm:mb-2 -mx-2">
+          <div class="p-2 sm:w-1/2 w-full">
+            <div class="bg-gray-100 dark:bg-gray-300 rounded flex p-4 h-full items-center">
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="text-indigo-500 w-6 h-6 flex-shrink-0 mr-4" viewBox="0 0 24 24">
+                <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+                <path d="M22 4L12 14.01l-3-3"></path>
+              </svg>
+              <span class="title-font font-medium">Enjoy complete safety</span>
+            </div>
+          </div>
+          <div class="p-2 sm:w-1/2 w-full">
+            <div class="bg-gray-100 dark:bg-gray-300 rounded flex p-4 h-full items-center">
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="text-indigo-500 w-6 h-6 flex-shrink-0 mr-4" viewBox="0 0 24 24">
+                <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+                <path d="M22 4L12 14.01l-3-3"></path>
+              </svg>
+              <span class="title-font font-medium">Discount 30% on first trip</span>
+            </div>
+          </div>
+          <div class="p-2 sm:w-1/2 w-full">
+            <div class="bg-gray-100 dark:bg-gray-300 rounded flex p-4 h-full items-center">
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="text-indigo-500 w-6 h-6 flex-shrink-0 mr-4" viewBox="0 0 24 24">
+                <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+                <path d="M22 4L12 14.01l-3-3"></path>
+              </svg>
+              <span class="title-font font-medium">Highly qualified drivers</span>
+            </div>
+          </div>
+          <div class="p-2 sm:w-1/2 w-full">
+            <div class="bg-gray-100 dark:bg-gray-300 rounded flex p-4 h-full items-center">
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="text-indigo-500 w-6 h-6 flex-shrink-0 mr-4" viewBox="0 0 24 24">
+                <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+                <path d="M22 4L12 14.01l-3-3"></path>
+              </svg>
+              <span class="title-font font-medium">safe and fast travel path</span>
+            </div>
+          </div>
+          <div class="p-2 sm:w-1/2 w-full">
+            <div class="bg-gray-100 dark:bg-gray-300 rounded flex p-4 h-full items-center">
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="text-indigo-500 w-6 h-6 flex-shrink-0 mr-4" viewBox="0 0 24 24">
+                <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+                <path d="M22 4L12 14.01l-3-3"></path>
+              </svg>
+              <span class="title-font font-medium">Aircraft at the highest level</span>
+            </div>
+          </div>
+          <div class="p-2 sm:w-1/2 w-full">
+            <div class="bg-gray-100 dark:bg-gray-300 rounded flex p-4 h-full items-center">
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="text-indigo-500 w-6 h-6 flex-shrink-0 mr-4" viewBox="0 0 24 24">
+                <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+                <path d="M22 4L12 14.01l-3-3"></path>
+              </svg>
+              <span class="title-font font-medium">Regular maintenance to Aircrafts</span>
+            </div>
+          </div>
+        </div>
+        <button class="flex mx-auto mt-16 text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">Button</button>
+      </div>
+    </section>
+    <!--features section end------------------------->
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.0/flowbite.min.js"></script>
+    <script src="assets/main.js"></script>
 </body>
 </html>
