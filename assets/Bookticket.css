@@ -1,0 +1,129 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --purple-color : #6365EF;
+    --purple-color-onhover : #4144ff;
+    --white-color : white;
+    --description-color : rgba(59, 59, 59, 0.63);
+
+}
+body{
+    background-image: linear-gradient(#8d8ffa62,#494cfc7a) , url(imgs/part1/pexels-ahmed-muntasir-912050.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+#container{
+    height: 450px;
+    width: 360px;
+    margin: 4% auto;
+    background-color:white;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+#bg-vid{
+    min-width: 100%;
+    min-height: 100%;
+    position: fixed;
+}
+
+/* *************************************** */
+#container form{
+    position: absolute;
+    top: 80px;
+    width: 100%;
+    text-align: center;
+}
+#container form input{
+    width: 80%;
+    margin: 5px 0px;
+    padding: 10px 5px;
+    border: none;
+    border-bottom: 1px solid var(--purple-color);
+    outline: none;
+    background: transparent;
+}
+#container form select{
+    width: 80%;
+    margin: 5px 0px;
+    padding: 10px 5px;
+    border: none;
+    border-bottom: 1px solid var(--purple-color);
+    outline: none;
+    background: transparent;
+}
+#container h2{
+    font-weight: bolder;
+    font-size: 40px;
+    text-align: center;
+}
+
+.main-btn{
+    background-color: var(--purple-color);
+    color: white;
+    border-radius: 5px;
+    border: none;
+    padding: 7px;
+    transition: .5s;
+    margin-top: 20px;
+    margin-left: 10px;
+    width: 100px;
+}
+.main-btn:hover{
+    background-color: var(--purple-color-onhover);
+}
+#Submit-btn{
+    background-color: var(--purple-color);
+    color: white;
+    border-radius: 5px;
+    border: none;
+    padding: 7px;
+    transition: .5s;
+    margin-top: 20px;
+    margin-left: 10px;
+    width: 100px;
+}
+#Submit-btn:hover{
+    background-color: var(--purple-color-onhover);
+}
+/* *************************** */
+#form1{
+    left: 0;
+    transition: .5s;
+}
+#form2{
+    left: 100%;
+    transition: .5s;
+}
+#form3{
+    left: 100%;
+    transition: .5s;
+}
+
+.steps{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 -1px 5px -1px #eee;
+    border-bottom: .5px solid var(--purple-color);
+    position: relative;
+}
+.step{
+    width: calc(100% / 3);
+    font-size: 20px;
+    color: black;
+    position: relative;
+    text-align: center;
+}
+#progress{
+    transition: .5s;
+    position: absolute;
+    height: 100%;
+    width:calc(100% / 3) ;
+    background-image: linear-gradient(to right,var(--purple-color),var(--purple-color-onhover));
+}
