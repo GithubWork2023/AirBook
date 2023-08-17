@@ -218,23 +218,25 @@ font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 
 
 @media (min-width : 1201px){
-  #offers-title{
+  .offers-title{
       text-align: center;
       position: relative;
       padding : 5px 0px
   }
-  #offers-title img{
-      width: 100px;
-      height: 100px;
+  .Icon-img{
+      width: 70px;
+      height: 70px;
+      margin: auto;
   }
-  #offers-title h2{
-      font-size: 70px;
+  .offers-title h2{
+      font-size: 60px;
       font-weight: bolder;
   }
-  #offers-title p{
+  .des-p{
       color: var(--description-color) ;
+      margin: auto;
   }
-  #offers-title::after{
+  .offers-title::after{
       content: "";
       position: absolute;
       bottom: 0;
@@ -296,23 +298,24 @@ font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 @media (min-width : 1025px) and (max-width : 1200px){
-  #offers-title{
+  .offers-title{
       text-align: center;
       position: relative;
       padding : 5px 0px
   }
-  #offers-title img{
-      width: 100px;
-      height: 100px;
+  .Icon-img{
+      width: 70px;
+      height: 70px;
+      margin: auto;
   }
-  #offers-title h2{
-      font-size: 70px;
+  .offers-title h2{
+      font-size: 60px;
       font-weight: bolder;
   }
-  #offers-title p{
+  .des-p{
       color: var(--description-color) ;
   }
-  #offers-title::after{
+  .offers-title::after{
       content: "";
       position: absolute;
       bottom: 0;
@@ -372,23 +375,24 @@ font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 @media (min-width : 769px) and (max-width : 1024px){
-  #offers-title{
+  .offers-title{
       text-align: center;
       position: relative;
       padding : 5px 0px
   }
-  #offers-title img{
+  .Icon-img{
       width: 90px;
       height: 90px;
+      margin: auto;
   }
-  #offers-title h2{
+  .offers-title h2{
       font-size: 55px;
       font-weight: bolder;
   }
-  #offers-title p{
+  .des-p{
       color: var(--description-color) ;
   }
-  #offers-title::after{
+  .offers-title::after{
       content: "";
       position: absolute;
       bottom: 0;
@@ -450,23 +454,24 @@ font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 @media (min-width : 530px) and (max-width : 768px){
-  #offers-title{
+  .offers-title{
       text-align: center;
       position: relative;
       padding : 5px 0px
   }
-  #offers-title img{
-      width: 85px;
-      height: 85px;
+  .Icon-img{
+      width: 70px;
+      height: 70px;
+      margin: auto;
   }
-  #offers-title h2{
+  .offers-title h2{
       font-size: 50px;
       font-weight: bolder;
   }
-  #offers-title p{
+  .des-p{
       color: var(--description-color) ;
   }
-  #offers-title::after{
+  .offers-title::after{
       content: "";
       position: absolute;
       bottom: 0;
@@ -500,6 +505,9 @@ font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
       position: relative;
       padding: 10px;
       overflow: hidden;
+      height: 400px;
+      width: 350px;
+      margin-bottom: 30px;
   }
   
   
@@ -527,23 +535,24 @@ font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 @media (min-width:300px ) and (max-width : 529px){
-  #offers-title{
+  .offers-title{
       text-align: center;
       position: relative;
       padding : 5px 0px
   }
-  #offers-title img{
+  .Icon-img{
       width: 70px;
       height: 70px;
+      margin: auto;
   }
-  #offers-title h2{
+  .offers-title h2{
       font-size: 55px;
       font-weight: bolder;
   }
-  #offers-title p{
+  .des-p{
       color: var(--description-color) ;
   }
-  #offers-title::after{
+  .offers-title::after{
       content: "";
       position: absolute;
       bottom: 0;
@@ -605,23 +614,24 @@ font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 @media (max-width : 299px){
-  #offers-title{
+  .offers-title{
       text-align: center;
       position: relative;
       padding : 5px 0px
   }
-  #offers-title img{
+  .Icon-img{
       width: 60px;
       height: 60px;
+      margin: auto;
   }
-  #offers-title h2{
+  .offers-title h2{
       font-size: 50px;
       font-weight: bolder;
   }
-  #offers-title p{
+  .des-p{
       color: var(--description-color) ;
   }
-  #offers-title::after{
+  .offers-title::after{
       content: "";
       position: absolute;
       bottom: 0;
@@ -721,3 +731,4 @@ font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   background-color: var(--purple-color-onhover);
   color: white;
 }
+
